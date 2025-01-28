@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chúc mừng năm mới Ất Tỵ 2025!</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-BQbeA5gHC8tfsCkYukk9M1Kcq4zC+7ECn7gbPxG8HwblYIE6TwqVhqo5Oub1T9qD" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+<link rel="icon" type="image/x-icon" href="img_vd_ms/icon.png">
+</head>
+
+<body>
+  <video autoplay muted loop>
+    <source src="img_vd_ms/fireworks loop.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <audio autoplay loop>
+    <source src="img_vd_ms/bg.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="container">
+    <br> <br> <br> <br>
+    <h1>Chúc mừng năm mới!</h1>
+    <p class="text1">Chúc Minh Shui năm mới sức khỏe dồi dào, vạn sự như ý. Luôn xinh đẹp, hạnh phúc bên người thân!</p>
+    <p class="text1">Chọn lì xì thôi!</p>
+    <br>
+    
+    <!-- Thêm các túi lì xì -->
+    <div class="li-xi-container">
+        <div class="li-xi" onclick="showModal('50k nha bé!')">
+            <img src="img_vd_ms/lixi.png" alt="Lì xì 1">
+        </div>
+        <div class="li-xi" onclick="showModal('100k nha bé!')">
+            <img src="img_vd_ms/lixi.png" alt="Lì xì 2">
+        </div>
+        <div class="li-xi" onclick="showModal('200k nha bé!')">
+            <img src="img_vd_ms/lixi.png" alt="Lì xì 3">
+        </div>
+        <div class="li-xi" onclick="showModal('500k nha bé!')">
+            <img src="img_vd_ms/lixi.png" alt="Lì xì 4">
+        </div>
+        <div class="li-xi" onclick="showModal('50k nha bé!')">
+            <img src="img_vd_ms/lixi.png" alt="Lì xì 5">
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="img_vd_ms/qoobee-laughing.gif" alt="Qoobee laughing" class="modal-image">
+            <p id="modal-text" class="tet-text"></p>
+
+            <i style="font-size: 12px; font-weight: 400;">*Chụp ảnh gửi cho NhanQT liền</i>
+        </div>
+    </div>
+
+    <style>
+        .modal-content {
+            background: linear-gradient(135deg, #ff0000 0%, #ffeb3b 100%);
+            border: 2px solid #ffd700;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+        }
+
+        .tet-text {
+            color: #fff;
+            font-size: 24px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-weight: bold;
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .close {
+            color: #fff;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover {
+            color: #ffd700;
+        }
+    </style>
+
+    <script>
+        // Modal functionality
+        function showModal(message) {
+            var modal = document.getElementById("myModal");
+            var modalText = document.getElementById("modal-text");
+            var span = document.getElementsByClassName("close")[0];
+            
+            modalText.textContent = message;
+            modal.style.display = "block";
+            
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+            
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
